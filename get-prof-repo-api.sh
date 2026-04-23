@@ -13,6 +13,11 @@ alunorepourl=${alunorepourl/"(fetch)"/}
 
 echo $alunorepourl
 
+#Cria commit com alteração ainda não commitadas
+echo "Adiciona alterações pendentes"
+git add .
+git commit -m "Alterações pendentes"
+
 #Renomeia o branch main
 git switch main
 
